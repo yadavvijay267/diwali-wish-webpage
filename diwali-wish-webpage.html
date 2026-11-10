@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
-<title>Diwali Wish Webpage — Happy Diwali 2026</title>
+<title>Diwali Wish Webpage — Happy Diwali 2027</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -228,7 +228,7 @@ function Diya(props){
 
 /* ---------------- Countdown ---------------- */
 function useCountdown(){
-  var target = useMemo(function(){ return new Date("2026-11-08T00:00:00+05:30").getTime(); },[]);
+  var target = useMemo(function(){ return new Date("2027-10-29T00:00:00+05:30").getTime(); },[]);
   var calc = function(){
     var diff = target - Date.now();
     if(diff <= 0) return null;
@@ -258,11 +258,11 @@ var WISHES = [
 ];
 var CATS = ["All","Family","Friends","Formal","Shayari"];
 var DAYS = [
-  {n:"Day 1", name:"Dhanteras", date:"Fri, 6 Nov 2026", main:false, text:"The festival begins with worship of Goddess Lakshmi and Lord Dhanvantari. Buying gold, silver or new utensils today is considered auspicious."},
-  {n:"Day 2", name:"Naraka Chaturdashi", date:"Sat, 7 Nov 2026", main:false, text:"Also called Choti Diwali — it marks Lord Krishna's victory over the demon Narakasura. Homes light the first diyas and burst the first crackers."},
-  {n:"Day 3", name:"Diwali · Lakshmi Puja", date:"Sun, 8 Nov 2026", main:true, text:"The main day. Families perform Lakshmi Puja in the evening, light rows of diyas, exchange sweets and gifts, and celebrate Rama's return to Ayodhya."},
-  {n:"Day 4", name:"Govardhan Puja", date:"Mon, 9 Nov 2026", main:false, text:"Devotees honour the Govardhan hill that Krishna lifted to protect his people, and prepare a mountain of food — the Annakut offering."},
-  {n:"Day 5", name:"Bhai Dooj", date:"Tue, 10 Nov 2026", main:false, text:"Sisters apply a tilak on their brothers' foreheads and pray for their long life; brothers promise protection and give gifts in return."}
+  {n:"Day 1", name:"Dhanteras", date:"Wed, 27 Oct 2027", main:false, text:"The festival begins with worship of Goddess Lakshmi and Lord Dhanvantari. Buying gold, silver or new utensils today is considered auspicious."},
+  {n:"Day 2", name:"Naraka Chaturdashi", date:"Thu, 28 Oct 2027", main:false, text:"Also called Choti Diwali — it marks Lord Krishna's victory over the demon Narakasura. Homes light the first diyas and burst the first crackers."},
+  {n:"Day 3", name:"Diwali · Lakshmi Puja", date:"Fri, 29 Oct 2027", main:true, text:"The main day. Families perform Lakshmi Puja in the evening, light rows of diyas, exchange sweets and gifts, and celebrate Rama's return to Ayodhya."},
+  {n:"Day 4", name:"Govardhan Puja", date:"Sat, 30 Oct 2027", main:false, text:"Devotees honour the Govardhan hill that Krishna lifted to protect his people, and prepare a mountain of food — the Annakut offering."},
+  {n:"Day 5", name:"Bhai Dooj", date:"Sun, 31 Oct 2027", main:false, text:"Sisters apply a tilak on their brothers' foreheads and pray for their long life; brothers promise protection and give gifts in return."}
 ];
 
 /* ---------------- App ---------------- */
@@ -324,7 +324,7 @@ function App(){
       h("div",{className:"shade"}),
       h(Fireworks),
       h("div",{className:"hero-inner"},
-        h("span",{className:"date-pill"}, h("span",{className:"dot"}), "Diwali · Sunday, 8 November 2026"),
+        h("span",{className:"date-pill"}, h("span",{className:"dot"}), "Diwali · Friday, 29 October 2027"),
         h("h1",null,"Happy Diwali"),
         h("div",{className:"hindi"},"दीपावली की शुभकामनाएँ"),
         h("p",{className:"lede"},"The festival of lights is here — a time for glowing diyas, sweet mithaas, and wishes that travel from heart to heart. Light a diya below, craft a personal greeting, and pass the light on."),
@@ -452,7 +452,7 @@ function App(){
 
     h("footer",null,
       h("div",{className:"f-title"},"Shubh Deepavali"),
-      h("p",null,"May the light of the diyas guide you toward happiness, health and prosperity — today and all year long. Happy Diwali 2026!")
+      h("p",null,"May the light of the diyas guide you toward happiness, health and prosperity — today and all year long. Happy Diwali 2027!")
     ),
 
     h("div",{className:"toast"+(toast?" show":""),role:"status"}, toast)
